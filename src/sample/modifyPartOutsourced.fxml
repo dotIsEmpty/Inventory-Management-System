@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="453.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.thirdController">
+
+    <children>
+        <Label layoutX="40.0" layoutY="42.0" text="Modify Part" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <RadioButton layoutX="333.0" layoutY="49.0" mnemonicParsing="false" onAction="#OnInHouse" text="In-House" />
+        <RadioButton fx:id="modPartOutSourcedRadio" layoutX="429.0" layoutY="49.0" mnemonicParsing="false" onAction="#OnOutsourced" selected="true" text="Outsourced" />
+        <Label layoutX="100.0" layoutY="140.0" text="ID" textAlignment="CENTER">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Label>
+        <Label layoutX="100.0" layoutY="183.0" text="Name" textAlignment="CENTER">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Label>
+        <Label layoutX="100.0" layoutY="226.0" text="Inventory" textAlignment="CENTER">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Label>
+        <Label layoutX="100.0" layoutY="271.0" text="Cost" textAlignment="CENTER">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Label>
+        <Label layoutX="100.0" layoutY="315.0" text="Max" textAlignment="CENTER">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Label>
+        <Label layoutX="100.0" layoutY="354.0" text="Company" textAlignment="CENTER">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Label>
+        <TextField fx:id="id" alignment="TOP_LEFT" disable="true" editable="false" layoutX="184.0" layoutY="136.0" prefHeight="25.0" prefWidth="107.0" />
+        <TextField fx:id="name" alignment="TOP_LEFT" layoutX="184.0" layoutY="179.0" prefHeight="25.0" prefWidth="107.0" />
+        <TextField fx:id="stock" alignment="TOP_LEFT" layoutX="184.0" layoutY="222.0" prefHeight="25.0" prefWidth="107.0" />
+        <TextField fx:id="price" alignment="TOP_LEFT" layoutX="184.0" layoutY="267.0" prefHeight="25.0" prefWidth="107.0" />
+        <TextField fx:id="max" alignment="TOP_LEFT" layoutX="184.0" layoutY="311.0" prefHeight="25.0" prefWidth="107.0" />
+        <TextField fx:id="company" alignment="TOP_LEFT" layoutX="184.0" layoutY="350.0" prefHeight="25.0" prefWidth="107.0" />
+        <TextField fx:id="min" alignment="TOP_LEFT" layoutX="417.0" layoutY="311.0" prefHeight="25.0" prefWidth="107.0" />
+        <Label layoutX="347.0" layoutY="315.0" text="Min" />
+        <Button layoutX="445.0" layoutY="412.0" mnemonicParsing="false" onAction="#OnCancelButton" text="Cancel" />
+        <Button layoutX="368.0" layoutY="412.0" mnemonicParsing="false" onAction="#onSaveMod" text="Save" />
+    </children>
+
+</AnchorPane>

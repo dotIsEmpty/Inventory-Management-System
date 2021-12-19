@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.fourthController">
+
+      <TextField layoutX="677.0" layoutY="37.0" prefHeight="25.0" prefWidth="162.0" promptText="Search by Part ID or Name" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="26.0" prefHeight="17.0" prefWidth="105.0" text="Add Product">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView layoutX="439.0" layoutY="89.0" prefHeight="150.0" prefWidth="400.0">
+        <columns>
+          <TableColumn prefWidth="79.33334350585938" text="Part ID" />
+          <TableColumn prefWidth="87.33331298828125" text="Part Name" />
+            <TableColumn prefWidth="128.0" text="Inventory Level" />
+            <TableColumn prefWidth="103.33331298828125" text="Cost / Unit" />
+        </columns>
+      </TableView>
+      <TableView layoutX="439.0" layoutY="297.0" prefHeight="150.0" prefWidth="400.0">
+        <columns>
+          <TableColumn prefWidth="79.33334350585938" text="Part ID" />
+          <TableColumn prefWidth="87.33331298828125" text="Part Name" />
+            <TableColumn prefWidth="128.0" text="Inventory Level" />
+            <TableColumn prefWidth="103.33331298828125" text="Cost / Unit" />
+        </columns>
+      </TableView>
+      <ScrollBar layoutX="439.0" layoutY="239.0" prefHeight="14.0" prefWidth="400.0" />
+      <ScrollBar layoutX="439.0" layoutY="447.0" prefHeight="14.0" prefWidth="400.0" />
+      <Button alignment="CENTER" layoutX="674.0" layoutY="510.0" mnemonicParsing="false" text="Save" />
+      <Button alignment="CENTER" layoutX="723.0" layoutY="262.0" mnemonicParsing="false" text="Add" />
+      <Button alignment="CENTER" layoutX="674.0" layoutY="472.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Remove Associated Part" />
+      <Button alignment="CENTER" layoutX="764.0" layoutY="510.0" mnemonicParsing="false" onAction="#OnCancelButton" text="Cancel" />
+      <ScrollBar layoutX="839.0" layoutY="114.0" orientation="VERTICAL" prefHeight="124.0" prefWidth="14.0" />
+      <ScrollBar layoutX="839.0" layoutY="322.0" orientation="VERTICAL" prefHeight="124.0" prefWidth="14.0" />
+      <TextField disable="true" layoutX="67.0" layoutY="139.0" prefHeight="25.0" prefWidth="149.0" promptText="Auto Gen" />
+      <TextField layoutX="67.0" layoutY="188.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField layoutX="66.0" layoutY="240.0" prefHeight="25.0" prefWidth="105.0" />
+      <TextField layoutX="66.0" layoutY="284.0" prefHeight="25.0" prefWidth="105.0" />
+      <TextField layoutX="66.0" layoutY="322.0" prefHeight="25.0" prefWidth="105.0" />
+      <TextField layoutX="252.0" layoutY="322.0" prefHeight="25.0" prefWidth="105.0" />
+      <Label layoutX="23.0" layoutY="143.0" text="ID" />
+      <Label layoutX="23.0" layoutY="192.0" text="Name" />
+      <Label layoutX="23.0" layoutY="244.0" text="Inv" />
+      <Label layoutX="23.0" layoutY="288.0" text="Price" />
+      <Label layoutX="23.0" layoutY="326.0" text="Max" />
+      <Label layoutX="213.0" layoutY="326.0" text="Min" />
+
+</AnchorPane>
